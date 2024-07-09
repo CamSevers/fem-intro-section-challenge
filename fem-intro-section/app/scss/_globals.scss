@@ -1,0 +1,75 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Epilogue", sans-serif;
+  font-size: $font-dmedium;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+a {
+  font-size: $font-dsmall;
+  text-decoration: none;
+  color: $gray;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+
+a:visited {
+  color: $gray;
+}
+
+a:hover {
+  color: $black;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}
+
+//flexbox classes
+.flex {
+  display: flex;
+}
+
+.flex-jc-c {
+  justify-content: center;
+}
+
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
+.flex-ai-c {
+  align-items: center;
+}
+
+//SLIDE ANIMATION GLOBALS
+.slide-right {
+  width: 40%;
+}
+.slide-left {
+  width: 100%;
+}
+
+// FEM footer class
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}

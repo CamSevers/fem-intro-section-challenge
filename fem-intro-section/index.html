@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/dist/style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+  <header class="header flex flex-ai-c flex-jc-sb">
+    <div class="header__overlay" id="overlay"></div>
+    <a href="/"><img class="header__logo" src="/images/logo.svg" alt="Snap" width="83.5" height="26.5"></a>
+    <nav class="flex flex-ai-c">
+        <ul class="header__nav-links flex" id="nav-links">
+          <div class="header__left flex">
+            <li class="links dropdown-one"><a href="#">Features <img class="arrow" src="/images/icon-arrow-down.svg" alt=""></a></li>
+              <ul class="header__dropdown-menu flex one">
+                <li><a href="/"><img src="/images/icon-todo.svg" alt="" width="17.5" height="20">Todo List</a></li>
+                <li><a href="/"><img src="/images/icon-calendar.svg" alt="" width="20" height="20"> Calendar</a></li>
+                <li><a href="/"><img src="/images/icon-reminders.svg" alt=""> Reminders</a></li>
+                <li><a href="/"><img src="/images/icon-planning.svg" alt=""> Planning</a></li>
+              </ul>
+            <li class="links dropdown-two"><a href="#">Company <img class="arrow" src="/images/icon-arrow-down.svg" alt=""></a></li>
+              <ul class="header__dropdown-menu flex two">
+                <li><a href="/">History</a></li>
+                <li><a href="/">Our Team</a></li>
+                <li><a href="/">Blog</a></li>
+              </ul>
+            <li class="links"><a href="/">Careers</a></li>
+            <li class="links"><a href="/">About</a></li>
+          </div>
+          <div class="header__right flex">
+            <li class="links"><a href="/">Login</a></li>
+            <li class="links"><a class="cta-btn" href="/">Register</a></li>
+          </div>
+        </ul>
+        <div class="header__btn-hmb" id="btn-hmb">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="hero flex">
+      <div class="hero__container">
+        <img class="hero__img-mobile" src="/images/image-hero-mobile.png" alt="" width="375" height="280">
+        <img class="hero__img-desktop" src="/images/image-hero-desktop.png" alt="" width="480" height="640">
+          <div class="hero__text flex">
+            <h2 class="">Make <br>remote work</h2>
+            <p class="">Get your team in sync, no matter your location. Streamline processes, 
+            create team rituals, and watch productivity soar.</p>
+            <a class="learn-more" href="/">Learn More</a>
+            <div class="hero__companies flex flex-ai-c flex-jc-sb">
+              <img src="/images/client-databiz.svg" alt="" width="80" height="14">
+              <img src="/images/client-audiophile.svg" alt="" width="52" height="25">
+              <img src="/images/client-meet.svg" alt="" width="64" height="14">
+              <img src="/images/client-maker.svg" alt="" width="58" height="17">
+            </div>
+          </div>
+      </div>
+    </section>
+  </main>
+
+  <footer style="margin-top: 100px; margin-bottom: 20px;">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Cameron Severs</a>.
+    </div>
+  </footer>
+<script src="/app/js/script.js"></script>  
+</body>
+</html>

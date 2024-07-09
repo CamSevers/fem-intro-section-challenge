@@ -1,0 +1,56 @@
+.hero {
+  &__img-mobile {
+    width: 100%;
+    height: auto;
+    max-height: 50vh;
+    min-height: 280px;
+    margin: 8px 0 48px 0;
+  }
+
+  &__img-desktop {
+    display: none;
+  }
+
+  &__text {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-content: center;
+    padding: 0 16px;
+
+    .margin {
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-size: $font-mlarge;
+      font-weight: 500;
+      margin: 0 0 24px 0;
+
+      br {
+        display: none;
+      }
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: $font-msmall;
+      margin: 0 0 34px 0;
+      color: gray;
+    }
+
+    .learn-more {
+      color: $white;
+      background-color: $black;
+      padding: 19px 36.5px;
+      margin: auto;
+      border: 1px solid black;
+      border-radius: 15px;
+      width: fit-content;
+    }
+  }
+
+  &__companies {
+    margin-top: 48px;
+  }
+}
